@@ -1,0 +1,39 @@
+.m-comments{
+    position: relative;
+    background-color: lighten($prymary, 40);
+    padding: .2em .5em;
+    border: 1px solid $prymary;
+    height: auto;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 12%;
+        left: -2%;
+        z-index: 3;
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-top: 20px solid lighten($prymary, 40);
+        //border-bottom: 60px solid blue; 
+        border-right: 10px solid transparent;
+        transform: rotate(-30deg);
+        
+        
+        
+    }
+
+    &-user{
+       
+
+        &__avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color:$prymary;
+        }
+    }
+}
+
+.btn-add-comments{
+    box-shadow: -2px 2px 12px rgba( $prymary,.3);
+}

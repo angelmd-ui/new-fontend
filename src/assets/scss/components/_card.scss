@@ -1,0 +1,243 @@
+.m-card{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: .8em 2em;
+    //background-color: #fdfdfd;
+    &--body{
+        position: relative;
+        width: 90%;
+        //min-height: 380px;
+    background-color: #fff;
+    border-radius:10px;
+    box-shadow: 0px 1px 8px 3px rgba(0,0,0, .1);
+    overflow: hidden;
+
+    }
+
+    &--image{
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    &--header{
+        display: flex;
+        padding: .4em .8em;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 12%;
+            right: 20%;
+            z-index: 3;
+            width: 0; 
+            height: 0; 
+            border-left: 15px solid transparent;
+            border-top: 25px solid white;
+            //border-bottom: 60px solid blue; 
+            border-right: 15px solid transparent;
+            
+            
+            
+        }
+    }
+    &--footer{
+        padding: .6em .6em;
+    }
+
+    &--title{
+        //flex: 2;
+        padding: .6em;
+    }
+
+    &--description{
+        width: 90%;
+        //height: auto;
+       // background-color: red;
+        padding: .6em;
+        text-overflow: ellipsis;
+       // white-space: nowrap;
+        //overflow: hidden;
+       // background-image: linear-gradient(to top,rgba(#000,.9),rgba(#fff,0));
+       //background-color: #fff;
+
+    }
+}
+
+.img__avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 4px;
+
+}
+.avatar-box{
+    display: flex;
+    //align-items: center;
+}
+.description-text{
+   
+    //word-wrap: break-word;
+}
+
+.views-item{
+  
+}
+.user-public{
+    width: 100%;
+    padding: .6em;
+}
+
+.header-icon__acreditacion{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.service-card {
+    //padding: .4em;
+    overflow: hidden;
+    height: 250px ;
+
+
+    &__body{
+        padding: .4em;
+    }
+    &__user{
+        position: relative;
+        height: 90%;
+        padding-bottom: 1em;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    &__user-header{
+        height: 100%;
+        justify-content: flex-end;
+        padding: .6em;
+        &-profile{
+            height: 30px;
+        }
+
+        
+    }
+
+    &__title{
+        width: 100%;
+    }
+
+    &__action{
+        padding: .5em;
+    }
+}
+
+.service-card-photos{
+    width: 100%;
+    height:auto;
+
+    img{
+       width: 50px ;
+       height: 80px;
+    }
+
+    &__item{
+
+    }
+}
+
+.overlays-cover{
+    width: 100%;
+    height: 100%;
+    opacity: .92;
+    background-image: linear-gradient(rgba(#fff,.1),rgba(70,0,170,.8))
+}
+
+.tag-tweet{
+    padding: .2em;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    span {
+      
+        padding: .2em;
+        
+    }
+}
+
+.area-card{
+   position: relative;
+   width: 100%;
+   height: 120px;
+   background-image: linear-gradient(to top,#6e15ff,#55dbff);
+   overflow: hidden;
+   align-items: center;
+   padding: .2em;
+  
+    
+  &--overlays{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 0;
+     top: 0;
+     left: 0;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+  }
+  &__icon{
+     position: relative;
+     z-index: 1;
+     
+    &-box{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        background-color: #fff;
+        padding: .2em;
+        
+    
+
+    }
+
+    &::before{
+     content: "";
+     position: absolute;
+     z-index: 1;
+     width: 95px;
+     height: 95px;
+     border-radius: 50%;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 60%;
+     background-color: rgba(#fff,.3);
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        z-index: 0;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        background-color: rgba(#fff,.1);
+       }
+  }
+}
+
+.proccess-card{
+    border: 1px solid #8615d1;
+}

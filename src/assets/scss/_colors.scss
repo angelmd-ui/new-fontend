@@ -1,0 +1,123 @@
+
+/*Main colors*/
+
+$prymary:#22e1ef;
+//$secundary:#0fdb8d;
+$secundary:#2bce41;
+$textDefault:#2b2b2b;
+
+$main_colors:(
+    white:#fff,
+    blue:$prymary,
+    blue-dark:rgb(6, 26, 39),
+    green:$secundary,
+    green-light:#7cf18c,
+    purple:#8615d1,
+    coffee:rgb(75, 64, 64),
+    pink:rgb(247, 71, 194),
+    danger:rgb(255, 0, 98),
+    black:$textDefault,
+    black-light:#6d6d6d,
+    yellower:rgb(251,182,16),
+    red:rgb(255, 0, 98),
+    informatica:$prymary,
+    edufisica:#136aea,
+    sistemas:rgb(6, 205, 255),
+    orange:orange
+
+);
+
+
+$categorys:(
+    educacion:$prymary,
+    tecnologia:$secundary,
+    cultura:#136aea,
+    admin:rgb(251,182,16),
+    deporte:rgb(16, 216, 251),
+    
+
+);
+
+$areas:(
+  programacion:$prymary,
+  pedagogia:rgb(251,182,16),
+  matematica:$secundary
+);
+
+@each $name,$colors in $main_colors{
+    .bg-#{$name}{
+        background-color: $colors;
+    }
+}
+@each $name,$colors in $areas{
+    .bg-#{$name}{
+        background-image: linear-gradient(to right ,lighten($colors,10),darken($colors,10)) ;
+
+    
+    }
+}
+@each $name,$colors in $main_colors{
+    .bg-outline--#{$name}{
+        border: 1px solid $colors;
+    }
+}
+
+
+@function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+  
+    @return $randomNum;
+  }
+
+
+@each $name,$colors in $main_colors{
+       
+ 
+      
+      
+      
+    
+    .bg-gradient--#{$name}{
+        
+        @if $name = 'blue'{
+            $random:random(270) + 300;
+             background-image: linear-gradient(to left ,$colors,darken($colors,15))  
+
+    
+     }
+       
+       /* @if $name = 'blue'{
+            $random:random(270) + 300;
+             background-image: linear-gradient(to left ,$colors,hsl(randomNum(210, 225), 80%, 50%))  
+
+    
+     }*/
+    
+     
+       @if $name = 'green'{
+            $random:random(270) + 300;
+             background-image: linear-gradient(to right,$colors,darken($colors,15))  
+
+    
+     }
+
+     @if $name = 'purple'{
+       
+         background-image: linear-gradient(to right,$colors,darken($colors,18))  
+
+
+ }
+    }
+ 
+ 
+
+}
+
+/*.bg-gradient--blue{
+  
+         background-image: linear-gradient(to right ,#005ddf,#00edcd)  
+
+
+}*/
+

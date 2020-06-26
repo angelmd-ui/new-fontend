@@ -1,0 +1,35 @@
+.m-btn{
+  outline: none;
+  background: none;
+  border: none;
+  appearance: none;
+  display: inline;
+  border-radius: 4px;
+  padding: .6em 4em;
+  font-size: 15px;
+  @each $name,$colors in $main_colors{
+    
+    &__#{$name}{
+        @if $name == 'white'{
+            color: #000;
+            background-color: $colors;
+
+        }
+        @if $name == 'black' {
+            color: #fff;
+            background-color: $colors;
+
+        }
+
+        color: #fff;
+        background-color: $colors;
+     
+    }
+
+    &-gradient__#{$name}{
+        color: #fff;
+        background-image: linear-gradient(to right,$colors,darken($colors,10));
+    }
+ }
+
+}

@@ -1,0 +1,67 @@
+.m-input{
+
+    &--box{
+       display: flex;
+       height: 50px;
+    }
+    input{
+        width: 100%;
+        background-color: #fff;
+        //border:1px solid $prymary;
+        border-radius: 6px;
+        box-shadow: 0px 1px 6px  rgba(#000000, .1);
+        font-size: 16px;
+        padding: 1.2em 1.2em;
+        border: none;
+        outline: none;
+
+        &:focus{
+            border: none;
+            outline: none;
+        }
+        
+
+    }
+}
+
+.box-textarea{
+    height: auto;
+  
+    background-image: linear-gradient(to right,rgba($prymary,.9),rgba(#fff,.2));
+    //border:1px solid $prymary;
+    padding: .5em;
+    
+    textarea{
+       width: 100%;
+       border: none;
+       background-color: rgba(#fff,0);
+       font-size: 16px;
+       color: #fff;
+    font-family: sans-serif;
+       &:focus{
+           outline: none;
+          
+          
+       }
+    }
+    
+
+}
+.m-textarea{
+    width: 100%;
+ textarea{
+     appearance: none;
+     border: none;
+     box-shadow: -1px 1px 10px rgba(#000000, .1);
+     font-size: 16px;
+     font-family: sans-serif;
+     padding: .4em;
+     color: $prymary;
+     resize: none;
+     transition: box-shadow .3s;
+
+     &:focus{
+        box-shadow: -3px 3px 15px rgba(#000000, .1);
+     }
+ }
+}

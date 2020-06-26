@@ -1,0 +1,46 @@
+
+
+.academy-header{
+    height: 150px;
+}
+
+#category-services{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    
+    
+}
+
+.post-question{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+
+}
+
+#category-services{
+    z-index: 110;
+}
+
+.area-item{
+    padding: 1em;
+    &__icon{
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+}
+
+.box-services{
+    width: 90%;
+}
+.user-icon-call{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+

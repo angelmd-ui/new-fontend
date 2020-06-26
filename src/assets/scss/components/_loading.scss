@@ -1,0 +1,16 @@
+.loading-box{
+    position: fixed;
+    z-index: 110;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,.3);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   animation: appear .2s both;
+   @keyframes appear {
+       to{
+           opacity: 1;
+       }
+   }
+}

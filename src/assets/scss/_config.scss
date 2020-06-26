@@ -1,0 +1,118 @@
+@import './_colors.scss';
+
+/*##### fonts ######*/
+
+.text{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: $textDefault;
+    
+      &-title{
+        font-size:28px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &-title--name{
+        font-size: 22px;
+        font-weight: 500;
+    
+      }
+      &-p{
+        font-size: 16px;
+        font-weight: 300;
+      }
+      &-normal{
+        font-size: 20px;
+        font-weight: 400;
+      }
+      &-sub{
+        font-size: 18px;
+        font-weight: 400;
+      }
+      &-medium{
+        font-size: 14px;
+        font-weight: 300;
+      }
+      &-small{
+        font-size: 12px;
+        font-weight: 300;
+      }
+     
+    
+    @each $name,$colors in $main_colors{
+    
+       &--#{$name}{
+         color: $colors;
+       }
+    }
+}
+
+@for $i from 1 through 10 {
+
+  $margin: #{$i * 4}px;
+   .mr-#{$i}{
+     margin-right: $margin  ;
+   }
+   .ml-#{$i}{
+    margin-left: $margin ;
+  }
+  .mb-#{$i}{
+    margin-bottom: $margin ;
+  }
+  .mt-#{$i}{
+    margin-top: $margin ;
+  }
+}
+@for $i from 1 through 10 {
+
+  $padding: #{$i * 1}em;
+   .p-#{$i }{
+    padding:$padding
+   }
+   .pr-#{$i}{
+     padding-right: $padding  ;
+   }
+   .pl-#{$i}{
+    padding-left: $padding ;
+  }
+  .pb-#{$i}{
+    padding-bottom: $padding ;
+  }
+  .pt-#{$i}{
+    padding-top: $padding ;
+  }
+}
+
+.position{
+  &-absolute{
+    position: absolute;
+  }
+  &-relative{
+    position: relative;
+  }
+  &-fixed{
+    position: fixed;
+  }
+}
+@for $i from 0 through 15 {
+.position-move{
+  z-index: 102;
+ 
+    $pos: #{$i * 2%};
+
+  &__top-#{$i}{
+    top: $pos  ;
+  }
+  &__left-#{$i}{
+    left: $pos ;
+  }
+
+  &__right-#{$i}{
+    right: $pos ;
+  }
+  &__bottom-#{$i}{
+    bottom: $pos ;
+  }
+
+}
+}

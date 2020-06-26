@@ -1,0 +1,96 @@
+.translate{
+    transform: translateY(10px);
+    animation: trans .2s .4s  ease-out both;
+    opacity: 0;
+    @keyframes trans {
+        to{
+            opacity: 1;
+          transform: translateY(0px);
+        }
+    }
+}
+.translatex{
+    transform: translateX(20%);
+    opacity: 0;
+    animation: transx .3s  ease-in-out both;
+  
+    @keyframes transx {
+        to{
+          opacity: 1;
+          transform: translateX(0%);
+        }
+    }
+}
+.translatereverse{
+    transform: translateX(0%);
+    animation: transt .5s  ease-in-out both;
+  
+    @keyframes transt {
+        to{
+          
+          transform: translateX(-100%);
+        }
+    }
+}
+
+.slide-down{
+    transform: translateX(-80%);
+    animation: slide-up .5s  ease-in-out both;
+  
+    @keyframes slide-up {
+        to{
+          
+          transform: translateX(0%);
+        }
+    }
+}
+
+
+.scale-to{
+    opacity: 0;
+    transform: scale(0);
+    animation: scaleto .3s  both;
+
+    @keyframes scaleto {
+        to{
+            opacity: 1;
+            transform: scale(1);
+         
+            
+        }
+    }
+}
+
+
+.appear{
+    opacity: 0;
+    animation: appear .3s both;
+    @keyframes appear {
+        to{
+            opacity: 1;
+        }
+    }
+}
+
+.desappear{
+    opacity: 1;
+
+    animation: desappear .4s both;
+    @keyframes desappear {
+       to{
+           opacity: 0;
+       }
+    }
+}
+.appear_vd{
+    opacity: 0;
+    animation: appearvd .8s both;
+    @keyframes appearvd {
+        to{
+            opacity: 1;
+        }
+    }
+}
+
+
+

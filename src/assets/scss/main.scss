@@ -1,0 +1,43 @@
+
+/*config*/
+@import './_config.scss';
+
+@import './utilities/_utilities.scss';
+
+@import './_mixings.scss';
+
+
+
+@import './components/_card.scss';
+@import './views/_views.scss';
+@import './components/_input.scss';
+@import './components/_buttons.scss';
+@import './components/_loading.scss';
+@import './components/_menu.scss';
+@import './components/_tag.scss';
+@import './components/_modal.scss';
+@import './components/_postDetails.scss';
+@import './components/_profileDetails.scss';
+
+
+@import './_animations.scss';
+html {
+  scroll-behavior: smooth;
+}
+body,*{
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-scrolling:touch;
+ 
+
+}
+
+#app{
+  font-family: 'Nunito',sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+
